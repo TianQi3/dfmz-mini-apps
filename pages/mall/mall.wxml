@@ -1,0 +1,11 @@
+<!--pages/mall/mall.wxml-->
+<view class='container'> 
+<swiper class='swiper' indicator-dots="{{indicatorDots}}"
+  autoplay="true" interval="2000" duration="500" style='width:750rpx; height:200rpx'>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" style='width:750rpx; height:200rpx'/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
